@@ -1,0 +1,42 @@
+#content-cards {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  .card {
+    border-radius: 20px;
+    padding: 1% 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+    background-color: var(--black_color);
+    &:hover {
+      transform: scale(1.1);
+      z-index: 10;
+    }
+    & p {
+      color: var(--base-color);
+    }
+    .card-title {
+      text-align: center;
+      color: var(--yellow-main-color);
+      text-shadow: 2px 2px var(--black_color);
+      background-color: var(--red-second-color);
+      border-radius: 20px;
+      padding: 1% 1%;
+    }
+    .card-img-top {
+      padding: 3%;
+      border-radius: 20px;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+    }
+    .btn {
+      background-color: var(--yellow-main-color);
+      border-style: solid 3px;
+      border-color: var(--black_color);
+    }
+  }
+}

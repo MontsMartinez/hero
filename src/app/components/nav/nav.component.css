@@ -1,0 +1,51 @@
+#logoBNHA {
+  text-align: center;
+  margin: 2%;
+  animation: animateDate 2s ease-in-out infinite alternate;
+  & img {
+    height: 200px;
+    width: 1000px;
+  }
+}
+@keyframes animateDate {
+  0% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(2px);
+  }
+}
+#nav {
+  z-index: 20;
+  & li {
+    margin: 2%;
+  }
+  & a,
+  span {
+    color: var(--base-color);
+  }
+}
+.ua_logo {
+  border-radius: 20%;
+  width: 100px;
+}
+
+#search.container-fluid {
+  margin-left: 30%;
+  margin-right: 3%;
+
+  & input .form-control {
+    & :focus {
+      outline: none;
+    }
+  }
+  & button.btn-outline-success {
+    color: black;
+    background-color: var(--yellow-main-color);
+    border-color: var(--yellow-second-color);
+  }
+}
+#name.navbar-text {
+  margin-right: 3%;
+  font-size: 20px;
+}

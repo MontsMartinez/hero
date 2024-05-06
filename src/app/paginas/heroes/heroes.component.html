@@ -1,0 +1,13 @@
+<div id="content-cards">
+    @for(hero of misHeroes; track hero; let idx = $index){
+        <div class="card" style="width: 18rem;">
+            <img src={{hero.img}} class="card-img-top" id="{{idx}}" alt="" (mouseover)="changeImg($event)" (mouseleave)="returnImg($event)">
+            <div class="card-body">
+                <h5 class="card-title">{{hero.alias}}</h5> <br>
+                <p class="card-text">Quirk </p>
+                <p class="card-text">{{hero.bio}}</p>
+                <a [routerLink]="['/heroe',idx]"  class="btn btn-primary">Mas</a>
+            </div>
+        </div>
+    }
+</div>

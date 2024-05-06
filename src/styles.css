@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Dancingfamily=Permanent+Marker&display=swap");
+
+:root {
+  --base-color: #ffffff;
+  --base-transition-color: #eeeeee;
+  --red-main-color: #a94438;
+  --red-second-color: #d24545;
+  --blue-main-color: #0f1035;
+  --blue-second-color: #365486;
+  --yellow-main-color: #fff600;
+  --yellow-second-color: #fdff00;
+  --redbrillante-main-color: #fe0000;
+  --redbrillante-second-color: #ff0032;
+  --black_color: #0c0c0c;
+}
+
+#bootstrap-override .bg-color-1 {
+  background-color: var(--black_color);
+}
+#bootstrap-override {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  position: relative;
+  & .item_resize {
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale3d(1.2, 1.2, 1.2);
+    }
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  box-sizing: border-box;
+}
