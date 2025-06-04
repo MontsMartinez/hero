@@ -20,14 +20,6 @@
           </li>
         </ul>
         <div id="search" class="container-fluid">
-          <!--
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success item_resize" type="submit">Search</button>
-          </form>
-
-          aria-label="Search"
-          -->
           <div id="search" class="d-flex">
             <input class="form-control me-2" type="text" placeholder="Search"  #buscarTexto (keyup.enter)="buscarUnHeroe(buscarTexto.value)">
             <button class="btn btn-outline-success item_resize" (click)="buscarUnHeroe(buscarTexto.value)" type="submit">Search</button>
@@ -40,6 +32,3 @@
       </div>
     </div>
   </nav>
-  <div>
-    <h1>Frank Elgard</h1>
-  </div>

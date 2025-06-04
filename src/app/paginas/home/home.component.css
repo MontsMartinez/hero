@@ -21,3 +21,9 @@
   border-radius: 0.3rem;
   background-color: var(--red-main-color);
 }
+
+.hero-mha {
+background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../../assets/images/arte.jpg'); /* Ejemplo de imagen de fondo */
+background-size: cover;
+background-position: center;
+}
